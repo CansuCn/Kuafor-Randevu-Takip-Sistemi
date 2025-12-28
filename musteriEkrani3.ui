@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Rockwell</family>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-30</y>
+      <width>800</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>800</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>800</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QGroupBox" name="konum_bilgisi_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>361</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Konum Bilgisi</string>
+     </property>
+     <widget class="QComboBox" name="sehir_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Kütahya</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="ilce_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="sehir_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Şehir:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ilce_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>İlçe:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="kuafor_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kuaför:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="kuafor_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>90</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QCalendarWidget" name="takvimM_calendarWidget">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>100</y>
+       <width>401</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">selection-background-color: rgb(245, 167, 255);</string>
+     </property>
+    </widget>
+    <widget class="QTimeEdit" name="timeEdit">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>350</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>361</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>İşlem Detayı ve Fotoğraf</string>
+     </property>
+     <widget class="QPushButton" name="randevu_kydt_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>341</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Rockwell</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+background-color: rgb(0, 0, 0);
+color: rgb(245, 167, 255);
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+}
+QPushButton:hover {
+background-color: #333333;
+border: 1px solid black;
+}</string>
+      </property>
+      <property name="text">
+       <string>KAYDET</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="islemDetay_Yaz_textEdit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>341</width>
+        <height>131</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="islemDetay_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>İşlem Detay Notunuz:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="randevu_bilgileri_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>380</y>
+       <width>400</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>400</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>400</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Seçili Randevu Bilgileri</string>
+     </property>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>149</y>
+        <width>381</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="onayla_pushButton">
+         <property name="font">
+          <font>
+           <family>Rockwell</family>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+background-color: rgb(0, 0, 0);
+color: rgb(245, 167, 255);
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+}
+QPushButton:hover {
+background-color: #333333;
+border: 1px solid black;
+}</string>
+         </property>
+         <property name="text">
+          <string>ONAYLA</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="sil_pushButton">
+         <property name="font">
+          <font>
+           <family>Rockwell</family>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+background-color: rgb(0, 0, 0);
+color: rgb(245, 167, 255);
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+}
+QPushButton:hover {
+background-color: #333333;
+border: 1px solid black;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>SİL</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>19</y>
+        <width>381</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="tarih_label">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Tarih:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="kuafor_adi_label">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Kuaför Adı:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="islem_label">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>İşlem:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QToolButton" name="profil_kutucuk_toolButton">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>60</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="randevu_saati_label">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>350</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>RANDEVU SAATİ:</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="islemler_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>361</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>İşlemler</string>
+     </property>
+     <widget class="QComboBox" name="sac_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>...Seçiniz...</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kesim</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maşa</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fön</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Boya</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nişan Saçı</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kına Saçı</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gelin Saçı</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="makyaj_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>60</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>...Seçiniz...</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gündelik Makyaj</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Porselen Makyaj</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Profesyonel Makyaj</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nişan Makyajı</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kına Makyajı</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gelin Makyajı</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="bakim_comboBox">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>100</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>...Seçiniz...</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Manikür</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pedikür</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lazer Epilasyon</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kaş</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bıyık</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cilt Bakımı</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Saç Bakımı</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="sac_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Saç:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="makyaj_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Makyaj:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bakim_label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bakım:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="profilimM_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>50</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+background-color: rgb(0, 0, 0);
+color: rgb(245, 167, 255);
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+}
+QPushButton:hover {
+background-color: #333333;
+border: 1px solid black;
+}</string>
+     </property>
+     <property name="text">
+      <string>PROFİLİM</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAna_Men">
+    <property name="title">
+     <string>Ana Menü</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuRandevular">
+    <property name="title">
+     <string>Randevular</string>
+    </property>
+    <addaction name="actionGelecek_Randevular"/>
+    <addaction name="actionGe_mi_Randevular"/>
+   </widget>
+   <addaction name="menuAna_Men"/>
+   <addaction name="menuRandevular"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGelecek_Randevular">
+   <property name="text">
+    <string>Gelecek Randevular</string>
+   </property>
+  </action>
+  <action name="actionGe_mi_Randevular">
+   <property name="text">
+    <string>Geçmiş Randevular</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
